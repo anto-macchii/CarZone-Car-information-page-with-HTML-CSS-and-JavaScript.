@@ -9,7 +9,7 @@ body {
     background-color: black;
     font-family: poppins, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: #eeeeee;
-    color: #fff;
+
 }
 
 /*---------- inicio header ----------*/
@@ -30,6 +30,27 @@ header {
     justify-content: space-evenly;
     align-items: center;
     flex-direction: row;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(0,0,0,0.95);
+    transition: height 0.3s, padding 0.3s;
+    height: 90px;
+    padding: 0 0;
+}
+
+header.header-scrolled {
+    height: 55px;
+    padding: 0 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.header-scrolled .logo-inicio {
+    width: 90px;
+    transition: width 0.3s;
+}
+.header-scrolled .logo-inicio img {
     width: 100%;
 }
 
@@ -56,7 +77,7 @@ header {
     font-size: 1em;
     color: #fff;
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 .navegation a:after {

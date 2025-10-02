@@ -30,6 +30,41 @@ header {
     align-items: center;
     flex-direction: row;
     width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.829);
+    transition: height 0.3s, padding 0.3s;
+    height: 90px;
+    padding: 0 0;
+}
+
+header.header-scrolled {
+    height: 55px;
+    padding: 0 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.header-scrolled .logo-inicio {
+    width: 90px;
+    transition: width 0.3s;
+}
+.header-scrolled .logo-inicio img {
+    width: 100%;
+}
+
+header.header-scrolled {
+    height: 55px;
+    padding: 0 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.header-scrolled .logo-inicio {
+    width: 90px;
+    transition: width 0.3s;
+}
+.header-scrolled .logo-inicio img {
+    width: 100%;
 }
 
 
@@ -56,7 +91,7 @@ header {
     font-size: 1em;
     color: #fff;
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 .navegation a:after {
@@ -78,29 +113,7 @@ header {
     transform: scaleX(1);
 }
 
-.serchbar {
-    padding-bottom: 0;
-    padding-top: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 400px;
-}
 
-.serchbar input {
-    width: 100%;
-    border: #242424 solid 4px;
-    background-color: #242424;
-    padding: 5px 25px 5px 25px;
-    border-radius: 50px;
-    color: #fff;
-}
-
-
-.serchbar input::placeholder {
-    color: #fff;
-    font-weight: 300;
-}
 
 /*---------- fin header ----------*/
 
@@ -112,10 +125,14 @@ header {
 }
 
 h1 {
-
-    margin-top: 30px;
+    margin-top: 70px;
     font-size: 2.5em;
     font-weight: 700;
+}
+
+
+.info-car__main{
+    margin-top: 30px;
 }
 
 .carousel-inner img {
@@ -135,6 +152,31 @@ h1 {
     line-height: 1.6;
 }
 
+.ficha-tecnica {
+    margin-top: 70px;
+}   
+
+.info-car p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    text-align: justify;
+    margin-top: 20px;
+}
+
+.info-car {
+    margin-bottom: 50px;
+}
+
+.info-marca {
+    margin: 70px 0;
+}
+
+.info-marca img {
+    width: auto;
+    height: 450px;
+    border-radius: 10px;
+    margin: 20px auto;
+}
 
 /*---------- fin main ----------*/
 
